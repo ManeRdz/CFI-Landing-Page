@@ -1,0 +1,177 @@
+.board-director-container {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+  padding: 20px;
+}
+.board-directors-box {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 70%;
+  min-height: 700px;
+}
+.board-directors-title {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+}
+.board-directos-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f7f7f7;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.proverb-container {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.proverb-text {
+  font-size: 12px;
+  font-style: italic;
+}
+.proverb-author {
+  font-size: 12px;
+}
+.profile-photo {
+  width: 100px;
+  border-radius: 50%;
+}
+.founders-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 80%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.founder-card {
+  width: 350px;
+  height: 250px;
+  background-color: #313131;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 15px;
+  color: #f7f7f7;
+  padding: 15px;
+  border-radius: 12px;
+}
+.founder-name {
+  font-size: 14px;
+  font-weight: 700;
+}
+.founder-desc {
+  font-size: 14px;
+  width: 80%;
+}
+.founder-1 {
+  opacity: 0;
+  transform: translate(-100px, -100px);
+  animation: FromLeftTop 0.3s linear;
+  animation-fill-mode: forwards;
+}
+.founder-2 {
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: FromTop 0.3s linear;
+  animation-fill-mode: forwards;
+}
+.founder-3 {
+  opacity: 0;
+  transform: translate(100px, -100px);
+  animation: FromRightTop 0.3s linear;
+  animation-fill-mode: forwards;
+}
+.founder-4 {
+  opacity: 0;
+  transform: translate(100px, -100px);
+  animation: FromLeftBottom 0.3s linear;
+  animation-fill-mode: forwards;
+}
+.founder-5 {
+  opacity: 0;
+  transform: translateY(100px);
+  animation: FromBottom 0.3s linear;
+  animation-fill-mode: forwards;
+}
+.founder-6 {
+  opacity: 0;
+  transform: translate(100px, 100px);
+  animation: FromRightBottom 0.3s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes FromLeftTop {
+  from {
+    opacity: 0;
+    transform: translate(-100px, -100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes FromRightTop {
+  from {
+    opacity: 0;
+    transform: translate(100px, -100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes FromLeftBottom {
+  from {
+    opacity: 0;
+    transform: translate(-100px, 100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes FromRightBottom {
+  from {
+    opacity: 0;
+    transform: translate(100px, 100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes FromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes FromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,142 @@
+.header {
+  min-width: 100dvw;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 200;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.logo-img {
+  width: 50px;
+}
+.company-title {
+  font-weight: 900;
+}
+.home-link {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+.nav-links {
+  margin-right: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  list-style: none;
+  padding: 20px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #f0f0f0;
+  padding: 10px;
+}
+.nosotros-link,
+.servicios-link,
+.inversionistas-link,
+.carreras-link {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nosotros-submenu,
+.servicios-submenu {
+  position: absolute;
+  background-color: #242424;
+  list-style: none;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  min-width: 300px;
+  max-height: 0;
+  top: 3.5rem;
+  left: -0.2rem;
+  overflow: hidden;
+  padding: 0 30px;
+  transition: all 0.2s ease-in;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(44, 44, 44);
+}
+.submenu-link {
+  font-size: 14px;
+  color: #f0f0f0;
+  text-decoration: none;
+  position: relative;
+  padding: 10px;
+}
+.submenu-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c00000;
+  transition: all 0.3s ease-in-out;
+}
+.nosotros-submenu-item:hover .submenu-link::after {
+  width: 100%;
+}
+.servicios-submenu-item:hover .submenu-link::after {
+  width: 100%;
+}
+.nosotros-link:hover .nosotros-submenu {
+  max-height: 300px;
+  padding: 20px 20px;
+}
+.servicios-link:hover .servicios-submenu {
+  max-height: 300px;
+  padding: 20px 20px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c00000;
+  transition: all 0.3s ease-in-out;
+}
+.nosotros-link:hover .nav-link::after {
+  width: 100%;
+}
+.servicios-link:hover .nav-link::after {
+  width: 100%;
+}
+.carreras-link:hover .nav-link::after {
+  width: 100%;
+}
+.contact-link {
+  border: 2px solid #c00000;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.contact-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #c00000;
+  transition: all 0.3s ease-in;
+  z-index: -1;
+}
+
+.contact-link:hover::before {
+  width: 100%;
+}

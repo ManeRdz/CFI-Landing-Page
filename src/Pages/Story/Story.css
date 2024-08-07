@@ -1,0 +1,141 @@
+.story-container {
+  background-color: #252525;
+  width: 100dvw;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+}
+.story-main-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  min-height: 70dvh;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.story-page-title {
+  font-size: 52px;
+  color: #f0f0f0;
+  font-weight: 900;
+  transform: translateX(-400px);
+  animation: appearFromLeft 0.3s linear;
+  animation-fill-mode: forwards;
+  width: 300px;
+}
+.story-dot {
+  margin: 0;
+  color: #aa0000;
+}
+.story-title-container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 20%;
+}
+.story-title-text {
+  color: #f0f0f0;
+  font-size: 14px;
+  opacity: 0;
+  animation: appear 0.3s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+}
+.scroller-container {
+  padding: 20px;
+  width: 750px;
+  height: 600px;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  transform: translateX(400px);
+  animation: appearFromRight 0.3s linear;
+  animation-fill-mode: forwards;
+}
+.scroll-trigger {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 40px;
+  position: relative;
+}
+.story-item {
+  background-color: #e2e2e2;
+  min-width: 400px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-story-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.story-overlay-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000ad;
+  border-radius: 20px;
+}
+.story-info {
+  position: relative;
+  color: #f0f0f0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 90%;
+}
+.story-year {
+  font-weight: 900;
+  font-size: 46px;
+}
+.story-title {
+  font-weight: 700;
+  font-size: 28px;
+}
+.story-description {
+  font-size: 14px;
+}
+
+@keyframes appearFromLeft {
+  from {
+    transform: translateX(-400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes appearFromRight {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
