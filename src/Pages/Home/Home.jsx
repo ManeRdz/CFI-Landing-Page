@@ -9,9 +9,32 @@ import image1 from "./assets/image1.jpg";
 import image2 from "./assets/image2.jpg";
 import image3 from "./assets/image3.jpg";
 import image4 from "./assets/image4.webp";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   const images = [image1, image2, image3, image4];
+  const wallpapers = [
+    {
+      title: "Asesoramiento estratégico",
+      text: "Lleva tu empresa al siguiente nivel con nuestro asesoramiento estrategico, obten y aplica las mejores estrategias del mercado!",
+      image: image1,
+    },
+    {
+      title: "Gestión de inversiones",
+      text: "¿Bolsa de valores? ¿Fibras? Olvidate de esos terminos complejos!, tener un portafolio de inversión ahora es muy sencillo gracias a C F I",
+      image: image2,
+    },
+    {
+      title: "Planificación financiera personal",
+      text: "¿Te preocupa el futuro?, suelta esa carga y déjanos armarte un plan de retiro totalmente personalizado!",
+      image: image3,
+    },
+    {
+      title: "Análisis de riesgos",
+      text: "Todos tenemos miedo a perder nuestra inversión, deja que C F I se encargue de encontrar y mitigar los riesgos que amenacen tu patrimonio!",
+      image: image4,
+    },
+  ];
   const [current, setCurrent] = useState(0);
   const [playing, setPlaying] = useState(true);
   let timeOut = null;
@@ -36,7 +59,7 @@ const Home = () => {
     <div className="home-container">
       <div className="image-slider">
         <ul className="image-list">
-          {images.map((image, index) => (
+          {wallpapers.map((wall, index) => (
             <li
               className={
                 index === current
@@ -46,17 +69,14 @@ const Home = () => {
             >
               <div className={"image-item-overlay"}>
                 <div className={"text-overlay"}>
-                  <h5 className="title">Lorem Ipsum</h5>
-                  <p className="p-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Excepturi dignissimos earum debitis, asperiores, nemo
-                    doloremque rem sint est perferendis commodi reprehenderit
-                    provident at odit dolor vitae dolorum. Delectus, quaerat
-                    voluptatem!
-                  </p>
+                  <h5 className="title">{wall.title}</h5>
+                  <p className="p-text">{wall.text}</p>
+                  <NavLink to="servicios" className="services-link">
+                    Saber más
+                  </NavLink>
                 </div>
               </div>
-              <img src={image} alt="img1" />
+              <img src={wall.image} alt="img1" />
             </li>
           ))}
         </ul>

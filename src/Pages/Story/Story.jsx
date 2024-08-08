@@ -7,6 +7,12 @@ import leaves2 from "./assets/leaves2.webp";
 import corn from "./assets/corn.jpg";
 import berries from "./assets/berries.jpg";
 import carrots from "./assets/carrots.jpeg";
+import beggining from "./assets/beginning.jpg";
+import expansion from "./assets/expansion.webp";
+import consolidation from "./assets/cosolidation.jpeg";
+import diver from "./assets/diversification.webp";
+import innovation from "./assets/innovation.jpg";
+import recon from "./assets/recon.jpeg";
 
 const Story = () => {
   const [width, setWidth] = useState(0);
@@ -16,46 +22,46 @@ const Story = () => {
   }, []);
   const cardItems = [
     {
-      img: leaves,
+      img: beggining,
       year: "2019",
-      title: "Algun titulo generico",
+      title: "El Inicio",
       contenido:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae itaque deserunt vitae obcaecati laudantium impedit et dolor, quasi, minus suscipit eligendi quae debitis libero eaque placeat sit voluptate molestias ipsum.",
+        "Sofía Hernández funda la consultora financiera integral, reuniendo a un equipo de expertos, incluyendo a Samantha Modesto, especialista en planificación estratégica y análisis de riesgos.",
     },
     {
-      img: berries,
+      img: expansion,
       year: "2020",
-      title: "Algun titulo generico",
+      title: "Expansión",
       contenido:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae itaque deserunt vitae obcaecati laudantium impedit et dolor, quasi, minus suscipit eligendi quae debitis libero eaque placeat sit voluptate molestias ipsum.",
+        "Sarai Reyes, experta en asesoramiento fiscal y contabilidad, se une al equipo, permitiendo a la consultora atraer grandes corporaciones.",
     },
     {
-      img: corn,
+      img: consolidation,
       year: "2021",
-      title: "Algun titulo generico",
+      title: "Consolidación",
       contenido:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae itaque deserunt vitae obcaecati laudantium impedit et dolor, quasi, minus suscipit eligendi quae debitis libero eaque placeat sit voluptate molestias ipsum.",
+        "Jennifer Torres, analista financiera, y Naím Sánchez, experto en mercados de capitales, se integran, fortaleciendo la capacidad de la firma para evaluar proyectos y estructurar operaciones financieras complejas.",
     },
     {
-      img: carrots,
+      img: diver,
       year: "2022",
-      title: "Algun titulo generico",
+      title: "Diversificación",
       contenido:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae itaque deserunt vitae obcaecati laudantium impedit et dolor, quasi, minus suscipit eligendi quae debitis libero eaque placeat sit voluptate molestias ipsum.",
+        "Lino Hernández, economista con experiencia en políticas públicas y desarrollo económico, se suma, permitiendo a la consultora trabajar en proyectos de impacto social y económico significativo.",
     },
     {
-      img: leaves2,
+      img: innovation,
       year: "2023",
-      title: "Algun titulo generico",
+      title: "Innovación",
       contenido:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae itaque deserunt vitae obcaecati laudantium impedit et dolor, quasi, minus suscipit eligendi quae debitis libero eaque placeat sit voluptate molestias ipsum.",
+        "La firma invierte en tecnología avanzada y automatización, mejorando la eficiencia y precisión de sus servicios.",
     },
     {
-      img: leaves2,
+      img: recon,
       year: "2024",
-      title: "Algun titulo generico",
+      title: "Reconocimiento",
       contenido:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae itaque deserunt vitae obcaecati laudantium impedit et dolor, quasi, minus suscipit eligendi quae debitis libero eaque placeat sit voluptate molestias ipsum.",
+        "La consultora es reconocida como líder en el sector, con un enfoque multidisciplinario y una sólida reputación, continuando su crecimiento y adaptación a las necesidades del mercado financiero.",
     },
   ];
   return (

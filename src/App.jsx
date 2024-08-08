@@ -4,10 +4,12 @@ import MainRouter from "./router/MainRouter.routes";
 import Layout from "./Layout/Layout";
 
 function App() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   return (
     <>
-      <Layout />
-      <MainRouter />
+      <Layout isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />
+      <MainRouter setIsDrawerOpen={setIsDrawerOpen} />
     </>
   );
 }

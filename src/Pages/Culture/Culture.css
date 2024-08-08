@@ -132,3 +132,39 @@
     transform: translateY(0);
   }
 }
+@media (max-width: 1500px) {
+  .culture-title {
+    margin-top: 200px;
+  }
+  .culture-cards-container {
+    row-gap: 20px;
+  }
+  .culture-container {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 7680px) {
+  .culture-title {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+  .card:hover .valores-list {
+    height: 70%;
+  }
+  .culture-cards-container {
+    width: 95%;
+  }
+  .card {
+    width: 350px;
+  }
+  .card-text {
+    width: 90%;
+  }
+}

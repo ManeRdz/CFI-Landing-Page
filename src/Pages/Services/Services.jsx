@@ -12,7 +12,7 @@ import client2 from "./assets/client2.jpeg";
 import client3 from "./assets/client3.jpg";
 import client4 from "./assets/client4.png";
 
-const Services = () => {
+const Services = ({ setIsDrawerOpen }) => {
   const services = [
     {
       title: "Asesoramiento estratégico",
@@ -66,7 +66,7 @@ const Services = () => {
       location: "Tijuana, México",
       calification: "4.7",
       testimonial:
-        "CFI me ayudo a crear mi portafolio de inversión, ahora gracias a ellos obtengo grandes rendimientos anuales.",
+        "CFI me ayudo a crear mi portafolio de inversión, ahora gracias a ellos obtengo grandes rendimientos mensuales.",
       image: client3,
     },
     {
@@ -95,7 +95,12 @@ const Services = () => {
           </h1>
           <div className="ad-text-container">
             <p className="ad-text">¿Te interesa saber más?</p>
-            <button className="contact-us-btn">¡Contactanos!</button>
+            <button
+              className="contact-us-btn"
+              onClick={() => setIsDrawerOpen(true)}
+            >
+              ¡Contactanos!
+            </button>
           </div>
         </div>
         <div className="services-flex">
@@ -127,7 +132,7 @@ const Services = () => {
       </div>
       <div className="testimonials">
         <h2 className="testimonials-title">
-          Que opinan nuestros clientes<span className="dot-1">:</span>
+          Lo que opinan nuestros clientes<span className="dot-1">:</span>
         </h2>
         <div className="testimonials-container">
           {testimonials.map((testimonial, index) => (

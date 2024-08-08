@@ -30,6 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .services-title {
@@ -201,4 +202,68 @@
 }
 .test-text {
   width: 90%;
+}
+
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 28px;
+  }
+  .services-container {
+    width: 100%;
+  }
+  .services-header {
+    width: 90%;
+  }
+  .ad-text {
+    font-size: 12px;
+  }
+  .contact-us-btn {
+    font-size: 12px;
+  }
+  .service-name {
+    font-size: 18px;
+  }
+  .service-icon {
+    font-size: 28px;
+    color: #c00000;
+  }
+  .service-desc {
+    width: 90%;
+    font-size: 14px;
+  }
+  .service-feature-title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .service-feature-icon {
+    font-size: 28px;
+  }
+  .service-feature-name {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .service-feature-title-box {
+    justify-content: start;
+    width: 100%;
+  }
+  .services-feature-flex {
+    justify-content: start;
+  }
+  .testimonials-title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .client-name {
+    font-size: 12px;
+  }
+  .client-location {
+    font-size: 10px;
+  }
+  .test-text {
+    font-size: 12px;
+  }
+  .client-photo {
+    width: 50px;
+    height: 50px;
+  }
 }
