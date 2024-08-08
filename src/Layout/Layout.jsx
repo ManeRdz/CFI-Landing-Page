@@ -20,14 +20,18 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
   const [hamburger, setHamburger] = useState(false);
   const sendMessage = (e) => {
     e.preventDefault();
-    if (name === "" || email === "" || message === "") {
-      console.log("empty");
-    } else {
+    if (isFormValid()) {
       setToastOpen(true);
+      setName("");
+      setEmail("");
+      setMessage("");
       setTimeout(() => {
         setToastOpen(false);
       }, 4000);
     }
+  };
+  const isFormValid = () => {
+    return name !== "" && email !== "" && message !== "";
   };
   const closeHMenu = () => {
     setHamburger(false);
@@ -47,6 +51,14 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
   };
   return (
     <>
+      <div
+        className={
+          toastOpen ? "send-message-toast toast-visible" : "send-message-toast"
+        }
+      >
+        <FaCheckCircle className="check-icon" />
+        <p className="toast-message">Se ha enviado tu mensaje!</p>
+      </div>
       <div
         className={
           hamburger ? "hamburger-menu hamburger-visible" : "hamburger-menu"
@@ -106,14 +118,7 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
           </li>
         </ul>
       </div>
-      <div
-        className={
-          toastOpen ? "send-message-toast toast-visible" : "send-message-toast"
-        }
-      >
-        <FaCheckCircle className="check-icon" />
-        <p className="toast-message">Se ha enviado tu mensaje!</p>
-      </div>
+
       <div
         className={
           isDrawerOpen

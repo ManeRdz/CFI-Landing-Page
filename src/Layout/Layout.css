@@ -318,7 +318,7 @@
   width: 100%;
 }
 .send-message-toast {
-  position: absolute;
+  position: fixed;
   height: 80px;
   width: 300px;
   background-color: #313131;
