@@ -16,22 +16,22 @@ const Home = () => {
   const wallpapers = [
     {
       title: "Asesoramiento estratégico",
-      text: "Lleva tu empresa al siguiente nivel con nuestro asesoramiento estrategico, obten y aplica las mejores estrategias del mercado!",
+      text: "Lleva tu empresa al siguiente nivel con nuestro asesoramiento estratégico, ¡Obtén y aplica las mejores estrategias del mercado!",
       image: image1,
     },
     {
       title: "Gestión de inversiones",
-      text: "¿Bolsa de valores? ¿Fibras? Olvidate de esos terminos complejos!, tener un portafolio de inversión ahora es muy sencillo gracias a C F I",
+      text: "¿Bolsa de valores? ¿Fibras? ¡Olvídate de esos términos complejos!, tener un portafolio de inversión ahora es muy sencillo gracias a CFI",
       image: image2,
     },
     {
       title: "Planificación financiera personal",
-      text: "¿Te preocupa el futuro?, suelta esa carga y déjanos armarte un plan de retiro totalmente personalizado!",
+      text: "¿Te preocupa el futuro? Suelta esa carga y déjanos armarte un plan de retiro, ¡totalmente personalizado!",
       image: image3,
     },
     {
       title: "Análisis de riesgos",
-      text: "Todos tenemos miedo a perder nuestra inversión, deja que C F I se encargue de encontrar y mitigar los riesgos que amenacen tu patrimonio!",
+      text: "Todos tenemos miedo a perder nuestra inversión. Deja que CFI se encargue de encontrar y mitigar los riesgos que amenacen tu patrimonio",
       image: image4,
     },
   ];

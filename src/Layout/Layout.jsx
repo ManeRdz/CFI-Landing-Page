@@ -85,7 +85,7 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
               onClick={() => setIsDrawerOpen(true)}
               className="h-link h-contact"
             >
-              Contactanos
+              Contáctanos
             </NavLink>
           </li>
         </ul>
@@ -108,7 +108,7 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
         <span className="close-btn" onClick={() => setIsDrawerOpen(false)}>
           <IoMdClose />
         </span>
-        <h3 className="contact-title">¡Contactanos por tu medio preferido!</h3>
+        <h3 className="contact-title">¡Contáctanos por tu medio preferido!</h3>
         <div className="social-media-container">
           <p className="social-media-title">Por nuestras redes sociales</p>
           <div className="social-media">
@@ -156,7 +156,7 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
           </div>
         </div>
         <div className="address-container">
-          <p className="address-title">Tambien puedes visitarnos en:</p>
+          <p className="address-title">También puedes visitarnos en:</p>
           <a
             href="https://www.google.com.mx/maps/place/Miguel+Hidalgo+42,+Centro,+36100+Silao+de+la+Victoria,+Gto./@20.9481327,-101.430521,17z/data=!3m1!4b1!4m6!3m5!1s0x842b9c7dbd5cf005:0xb311410c7be43ad3!8m2!3d20.9481328!4d-101.4256501!16s%2Fg%2F11c1kff3wl?entry=ttu"
             target="_noblank"
@@ -196,7 +196,7 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
                 value={email}
               />
               <label htmlFor="email" className="label-text">
-                Correo electronico
+                Correo electrónico
               </label>
             </div>
             <div className="input-label">
@@ -264,7 +264,7 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
           </li>
           <li className="contact-link">
             <NavLink onClick={() => setIsDrawerOpen(true)} className="nav-link">
-              Contactanos
+              Contáctanos
             </NavLink>
           </li>
         </ul>

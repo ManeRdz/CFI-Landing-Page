@@ -58,7 +58,7 @@ const Services = ({ setIsDrawerOpen }) => {
       location: "Queretaro, México",
       calification: "4.2",
       testimonial:
-        "Estoy muy agradecido con CFI, gracias a su ayuda mi empresa pudo generar un 50% más de ganancias.",
+        "Estoy muy agradecido con CFI, gracias a su ayuda, mi empresa pudo generar un 50% más de ganancias.",
       image: client1,
     },
     {
@@ -66,7 +66,7 @@ const Services = ({ setIsDrawerOpen }) => {
       location: "Tijuana, México",
       calification: "4.7",
       testimonial:
-        "CFI me ayudo a crear mi portafolio de inversión, ahora gracias a ellos obtengo grandes rendimientos mensuales.",
+        "CFI me ayudó a crear mi portafolio de inversión, ahora gracias a ellos obtengo grandes rendimientos mensuales.",
       image: client3,
     },
     {
@@ -74,7 +74,7 @@ const Services = ({ setIsDrawerOpen }) => {
       location: "Guanajuato, México",
       calification: "4.3",
       testimonial:
-        "Hace unos meses no sabia ni en que AFORE estaba, ahora gracias a CFI tengo un plan de retiro bien planificado.",
+        "Hace unos meses no sabía ni en que AFORE estaba, ahora, gracias a CFI, tengo un plan de retiro bien planificado.",
       image: client2,
     },
     {
@@ -82,7 +82,7 @@ const Services = ({ setIsDrawerOpen }) => {
       location: "Queretaro, México",
       calification: "4.5",
       testimonial:
-        "Mi portafolio de inversión era un caos!, pero con la ayuda de CFI pude solucionarlo y evitar grandes perdidas.",
+        "¡Mi portafolio de inversión era un caos!, pero con la ayuda de CFI pude solucionarlo y evitar grandes pérdidas.",
       image: client4,
     },
   ];
@@ -99,7 +99,7 @@ const Services = ({ setIsDrawerOpen }) => {
               className="contact-us-btn"
               onClick={() => setIsDrawerOpen(true)}
             >
-              ¡Contactanos!
+              ¡Contáctanos!
             </button>
           </div>
         </div>

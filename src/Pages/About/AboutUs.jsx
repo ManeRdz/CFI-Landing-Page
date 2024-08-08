@@ -23,7 +23,7 @@ const AboutUs = () => {
           </div>
           <div className="about-description-box">
             <p className="about-description">
-              Consultoría Financiera Integral (CFI), es una firma dedicada a
+              Consultoría Financiera Integral (CFI) es una firma dedicada a
               proporcionar soluciones financieras integrales y personalizadas a
               empresas y particulares. Nos especializamos en la planificación
               financiera, gestión de inversiones, asesoramiento en fusiones y
