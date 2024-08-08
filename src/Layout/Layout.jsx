@@ -94,7 +94,13 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
             </NavLink>
           </li>
           <li className="h-link-item">
-            <NavLink onClick={openDrawer} className="h-link h-contact">
+            <NavLink
+              onClick={() => {
+                closeHMenu();
+                openDrawer();
+              }}
+              className="h-link h-contact"
+            >
               Contáctanos
             </NavLink>
           </li>
