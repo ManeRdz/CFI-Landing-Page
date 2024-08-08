@@ -31,6 +31,19 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
   };
   const closeHMenu = () => {
     setHamburger(false);
+    document.body.style.overflowY = "auto";
+  };
+  const openHMenu = () => {
+    setHamburger(true);
+    document.body.style.overflowY = "hidden";
+  };
+  const openDrawer = () => {
+    setIsDrawerOpen(true);
+    document.body.style.overflowY = "hidden";
+  };
+  const closeDrawer = () => {
+    setIsDrawerOpen(false);
+    document.body.style.overflowY = "auto";
   };
   return (
     <>
@@ -40,7 +53,7 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
         }
       >
         <ul className="h-links-list">
-          <span className="close-btn" onClick={() => setHamburger(false)}>
+          <span className="close-btn" onClick={closeHMenu}>
             <IoMdClose />
           </span>
           <li className="h-link-item">
@@ -81,10 +94,7 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
             </NavLink>
           </li>
           <li className="h-link-item">
-            <NavLink
-              onClick={() => setIsDrawerOpen(true)}
-              className="h-link h-contact"
-            >
+            <NavLink onClick={openDrawer} className="h-link h-contact">
               Contáctanos
             </NavLink>
           </li>
@@ -105,7 +115,7 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
             : "contact-drawer"
         }
       >
-        <span className="close-btn" onClick={() => setIsDrawerOpen(false)}>
+        <span className="close-btn" onClick={closeDrawer}>
           <IoMdClose />
         </span>
         <h3 className="contact-title">¡Contáctanos por tu medio preferido!</h3>
@@ -225,10 +235,7 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
           <img className="logo-img" src={logo} alt="company-logo" />
           <div className="company-title">C F I</div>
         </NavLink>
-        <NavLink
-          className="nav-link hamburger"
-          onClick={() => setHamburger(true)}
-        >
+        <NavLink className="nav-link hamburger" onClick={openHMenu}>
           <RxHamburgerMenu className="h-icon" />
         </NavLink>
         <ul className="nav-links">
@@ -263,7 +270,7 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
             </NavLink>
           </li>
           <li className="contact-link">
-            <NavLink onClick={() => setIsDrawerOpen(true)} className="nav-link">
+            <NavLink onClick={openDrawer} className="nav-link">
               Contáctanos
             </NavLink>
           </li>

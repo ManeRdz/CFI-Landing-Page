@@ -86,6 +86,10 @@ const Services = ({ setIsDrawerOpen }) => {
       image: client4,
     },
   ];
+  const openDrawer = () => {
+    setIsDrawerOpen(true);
+    document.body.style.overflowY = "hidden";
+  };
   return (
     <div className="services-page-container">
       <div className="services-container">
@@ -95,10 +99,7 @@ const Services = ({ setIsDrawerOpen }) => {
           </h1>
           <div className="ad-text-container">
             <p className="ad-text">¿Te interesa saber más?</p>
-            <button
-              className="contact-us-btn"
-              onClick={() => setIsDrawerOpen(true)}
-            >
+            <button className="contact-us-btn" onClick={openDrawer}>
               ¡Contáctanos!
             </button>
           </div>
