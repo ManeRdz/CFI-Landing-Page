@@ -14,6 +14,7 @@
   min-height: 70dvh;
   margin-top: 50px;
   flex-wrap: wrap;
+  padding: 150px 0;
 }
 .story-page-title {
   font-size: 52px;
@@ -178,5 +179,8 @@
   }
   .story-description {
     font-size: 12px;
+  }
+  .story-main-box {
+    padding: 0 0;
   }
 }

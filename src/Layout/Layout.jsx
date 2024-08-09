@@ -189,56 +189,6 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
             </p>
           </a>
         </div>
-        <form onSubmit={(e) => sendMessage(e)} className="contact-form">
-          <p className="contact-form-title">O puedes enviarnos un mensaje:</p>
-          <div className="form-container">
-            <div className="input-label">
-              <input
-                type="text"
-                className="name inputfield"
-                id="name"
-                autoComplete="off"
-                required
-                onChange={(e) => setName(e.target.value)}
-                value={name}
-              />
-              <label htmlFor="name" className="label-text">
-                Nombre
-              </label>
-            </div>
-            <div className="input-label">
-              <input
-                type="text"
-                className="email inputfield"
-                id="email"
-                autoComplete="off"
-                required
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-              />
-              <label htmlFor="email" className="label-text">
-                Correo electrónico
-              </label>
-            </div>
-            <div className="input-label">
-              <input
-                type="text"
-                className="text inputfield"
-                id="text"
-                autoComplete="off"
-                required
-                onChange={(e) => setMessage(e.target.value)}
-                value={message}
-              />
-              <label htmlFor="text" className="label-text">
-                Escribe tu mensaje
-              </label>
-            </div>
-            <div className="container-btn">
-              <input type="submit" value="Enviar" className="send-button" />
-            </div>
-          </div>
-        </form>
       </div>
 
       <header className="header">

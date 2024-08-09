@@ -27,6 +27,7 @@
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 50px 0;
 }
 .card {
   width: 400px;
