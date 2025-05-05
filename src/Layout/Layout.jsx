@@ -175,7 +175,7 @@ const Layout = ({ isDrawerOpen, setIsDrawerOpen }) => {
                 </a>
                 <a href="tel:+1234567890" target="_blank" className="phone">
                   <FaPhone className="s-icon p" />
-                  <p className="phone-number">+52 472 100 0801</p>
+                  <p className="phone-number">+52 477 800 9812</p>
                 </a>
               </div>
             </div>
